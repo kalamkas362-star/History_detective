@@ -1,1 +1,183 @@
-<!doctype html><html lang="kk"><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="theme-color" content="#101A25"/><meta name="description" content="Қытайдағы апиын соғыстары туралы интерактивті тарихи детектив сабағы"/><title>HISTORY DETECTIVE — Құпия іс №1839</title><link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700&family=Noto+Serif:wght@500;600;700&display=swap" rel="stylesheet"></head><body><div id="root"></div><script type="module" src="/src/main.tsx"></script></body></html>
+<!doctype html>
+<html lang="kk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#102238">
+<meta name="description" content="7-сынып дүниежүзі тарихы: Азия мемлекеттері, еуропалық отаршылдық экспансиясы. Интерактивті тапсырмалар мен бағалау.">
+<title>HISTORY DETECTIVE — Азия мемлекеттері | 7-сынып</title>
+<style>
+:root{--navy:#102238;--ink:#172b40;--muted:#617287;--cream:#f7f5ef;--paper:#fff;--gold:#e9b65c;--teal:#117c78;--line:#dce3e8;--pale:#eaf3f3;--red:#a54141;--green:#23734c;--shadow:0 14px 38px #10223812}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--cream);font-family:Inter,"Segoe UI",Arial,sans-serif;color:var(--ink);line-height:1.6}
+button,input,select,textarea{font:inherit}button{cursor:pointer}.wrap{width:min(1120px,calc(100% - 32px));margin:auto}
+header{background:var(--navy);color:#fff;padding:24px 0 42px;position:relative;overflow:hidden}header:after{content:"";position:absolute;right:-120px;top:-180px;width:440px;height:440px;border-radius:50%;border:1px solid #ffffff19;box-shadow:0 0 0 42px #ffffff08,0 0 0 84px #ffffff06;pointer-events:none}
+.topline{display:flex;align-items:center;justify-content:space-between;gap:16px;position:relative;z-index:1}.brand{display:flex;gap:12px;align-items:center;font-size:13px;letter-spacing:.12em;font-weight:800}.brand-mark{width:40px;height:40px;border-radius:12px;background:var(--gold);color:var(--navy);display:grid;place-items:center;font-weight:900;font-size:18px;letter-spacing:0}.top-actions{display:flex;gap:8px;flex-wrap:wrap}.btn{border:0;border-radius:10px;padding:10px 15px;font-weight:750;transition:transform .15s,background .15s}.btn:hover{transform:translateY(-1px)}.btn-gold{background:var(--gold);color:var(--navy)}.btn-light{background:#ffffff14;color:#fff;border:1px solid #ffffff35}.hero{position:relative;z-index:1;padding-top:40px;max-width:800px}.eyebrow{color:var(--gold);font-size:12px;font-weight:800;letter-spacing:.18em;text-transform:uppercase}.hero h1{font-size:clamp(32px,5vw,54px);line-height:1.08;letter-spacing:-.04em;margin:12px 0 18px}.hero p{max-width:720px;color:#d8e1e9;margin:0;font-size:17px}.meta{display:flex;gap:9px;flex-wrap:wrap;margin-top:22px}.chip{border:1px solid #ffffff35;border-radius:999px;padding:5px 11px;font-size:12px;color:#e8edf2}
+.nav{background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:10}.nav-inner{display:flex;gap:6px;overflow:auto;padding:10px 0}.nav a{white-space:nowrap;color:#53667a;text-decoration:none;font-size:13px;font-weight:750;padding:9px 13px;border-radius:9px}.nav a:hover,.nav a:focus{background:var(--pale);color:var(--teal)}
+main{padding:28px 0 56px}.objectives{display:grid;grid-template-columns:1.1fr 2fr;gap:18px;margin-bottom:28px}.intro-card,.objective-card,.card,.score-panel{background:var(--paper);border:1px solid var(--line);border-radius:17px;box-shadow:var(--shadow)}.intro-card{padding:22px;background:var(--pale);border-color:#d4e6e5}.intro-card h2{font-size:20px;margin:0 0 8px}.intro-card p{margin:0;color:#425d6b;font-size:14px}.objective-card{padding:21px}.objective-card h2{font-size:17px;margin:0 0 10px}.objectives-list{display:grid;grid-template-columns:1fr 1fr;gap:10px}.objective{font-size:13px;color:#4b5d70;display:flex;gap:9px}.objective b{color:var(--teal);flex:0 0 auto}
+.section{margin-top:34px;scroll-margin-top:82px}.section-heading{display:flex;align-items:flex-end;justify-content:space-between;gap:14px;margin:0 0 16px}.section-heading h2{margin:0;font-size:clamp(23px,3vw,31px);letter-spacing:-.03em}.section-heading p{margin:4px 0 0;color:var(--muted);font-size:14px}.section-label{font-weight:800;color:var(--teal);font-size:11px;letter-spacing:.14em;text-transform:uppercase}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}.card{padding:22px;min-width:0}.card-head{display:flex;gap:12px;align-items:flex-start;margin-bottom:14px}.number{width:38px;height:38px;border-radius:12px;background:var(--navy);color:white;display:grid;place-items:center;font-weight:850;flex:0 0 auto}.card h3{margin:0;font-size:18px;line-height:1.3}.sub{color:var(--muted);font-size:13px;margin-top:4px}.level{display:inline-block;padding:3px 9px;border-radius:999px;background:#f8eccc;color:#785416;font-size:11px;font-weight:850;margin-bottom:8px}.prompt{font-size:14px;color:#405266}.terms{display:grid;gap:9px;margin-top:15px}.term-row{display:grid;grid-template-columns:1fr 100px;align-items:center;gap:12px;padding:9px 10px;border:1px solid var(--line);border-radius:10px;background:#fcfcfb}.term-row label{font-size:14px;font-weight:700}.term-row small{display:block;font-weight:400;color:var(--muted)}select,input[type=text],input[type=number],textarea{width:100%;border:1px solid #ccd6de;border-radius:9px;background:#fff;color:var(--ink);padding:10px 11px;outline:none}select:focus,input:focus,textarea:focus{border-color:var(--teal);box-shadow:0 0 0 3px #117c7818}textarea{resize:vertical;min-height:92px}.field{margin-top:11px}.field label{display:block;font-size:13px;font-weight:750;margin-bottom:5px}.field small{display:block;color:var(--muted);font-size:12px;margin-top:5px}.btn-row{display:flex;gap:8px;flex-wrap:wrap;margin-top:14px}.btn-primary{background:var(--teal);color:#fff}.btn-outline{background:white;border:1px solid var(--line);color:var(--ink)}.feedback{display:none;margin-top:12px;border-radius:10px;padding:10px 12px;font-size:13px}.feedback.show{display:block}.feedback.ok{background:#e7f5ed;color:#205e3f}.feedback.no{background:#fff0ec;color:#913c30}.list{padding-left:20px;margin:8px 0}.list li{margin:5px 0;font-size:14px}.scenario{background:#f5f8fa;border-left:4px solid var(--gold);padding:13px 15px;border-radius:0 10px 10px 0;margin:12px 0;color:#415367;font-size:14px}.creative-tag{color:#8d5b1c;background:#fff4dd;display:inline-block;border-radius:7px;padding:4px 8px;font-size:11px;font-weight:850;margin-bottom:9px}
+table{width:100%;border-collapse:collapse;font-size:13px;margin-top:12px}th,td{border:1px solid var(--line);padding:10px;text-align:left;vertical-align:top}th{background:#f2f6f7;color:#344e61}td textarea{min-height:66px}.truth-row{display:grid;grid-template-columns:1fr 130px;gap:12px;align-items:center;border-bottom:1px solid var(--line);padding:12px 0}.truth-row:last-child{border:0}.truth-row p{font-size:14px;margin:0}.rubric{font-size:13px;background:#f7f9fa;border-radius:10px;padding:12px 14px;margin-top:14px}.rubric strong{display:block;margin-bottom:4px}.score-panel{padding:22px;margin-top:22px;display:grid;grid-template-columns:1fr 1fr;gap:20px}.score-panel h3{margin:0 0 8px}.score-big{font-size:42px;font-weight:900;color:var(--teal);line-height:1}.score-unit{font-size:13px;color:var(--muted)}.score-fields{display:grid;grid-template-columns:1fr 1fr;gap:10px}.score-field label{display:block;font-size:12px;font-weight:800;margin-bottom:4px}.score-field input{padding:8px}.bar{height:8px;background:#e5ebee;border-radius:99px;margin-top:13px;overflow:hidden}.bar span{display:block;height:100%;background:var(--teal);width:0;transition:width .2s}.teacher-only{border:1px dashed #b8c6d0;border-radius:12px;padding:14px;margin-top:14px}.teacher-only summary{font-weight:800;cursor:pointer}.teacher-only p,.teacher-only li{font-size:13px;color:#53667a}
+footer{background:var(--navy);color:#d2dbe4;padding:24px 0;font-size:13px}.foot{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}.muted{color:var(--muted)}.badge{display:inline-block;background:#edf4f4;color:var(--teal);border-radius:7px;padding:3px 7px;font-size:11px;font-weight:850}
+@media(max-width:760px){.objectives,.grid,.score-panel{grid-template-columns:1fr}.objectives-list{grid-template-columns:1fr}.section-heading{align-items:flex-start;flex-direction:column}.card{padding:17px}.topline{align-items:flex-start}.brand{font-size:11px}.hero{padding-top:30px}.term-row{grid-template-columns:1fr 92px}.score-fields{grid-template-columns:1fr 1fr}.truth-row{grid-template-columns:1fr 112px}} 
+@media print{body{background:white}.nav,.top-actions,.btn,.btn-row,footer{display:none!important}header{background:#fff;color:#102238;padding:10px 0 20px}header:after{display:none}.hero p,.chip{color:#384e61}.chip{border-color:#aaa}.section{break-inside:avoid}.card,.intro-card,.objective-card,.score-panel{box-shadow:none;break-inside:avoid}.teacher-only[open] summary{margin-bottom:10px}.teacher-only:not([open]){display:block}.wrap{width:100%}}
+</style>
+</head>
+<body>
+<header>
+ <div class="wrap">
+  <div class="topline">
+   <div class="brand"><div class="brand-mark">HD</div><div>HISTORY DETECTIVE<br><span style="font-weight:500;letter-spacing:.04em;color:#bfccd8">ОҚУ ЗЕРТХАНАСЫ</span></div></div>
+   <div class="top-actions"><button class="btn btn-light" onclick="window.print()">Басып шығару / PDF</button><button class="btn btn-gold" onclick="document.getElementById('score').scrollIntoView({behavior:'smooth'})">Нәтиже мен балл</button></div>
+  </div>
+  <div class="hero">
+   <div class="eyebrow">7-СЫНЫП · ДҮНИЕЖҮЗІ ТАРИХЫ</div>
+   <h1>Азия мемлекеттері:<br>отаршылдық дәуіріндегі өзгерістер</h1>
+   <p>Еуропалық державалардың Азияға ықпалын зертте. Тарихи деректерді салыстыр, сауда ұғымдарын қолдан, дәлелді шешім қабылда.</p>
+   <div class="meta"><span class="chip">Қытай · Үндістан · Жапония</span><span class="chip">Деңгейлік тапсырмалар</span><span class="chip">Шығармашылық зертхана</span><span class="chip">Функционалдық сауаттылық</span></div>
+  </div>
+ </div>
+</header>
+<nav class="nav"><div class="wrap nav-inner"><a href="#aims">Оқу мақсаттары</a><a href="#levels">1. Деңгейлік</a><a href="#creative">2. Шығармашылық</a><a href="#functional">3. Функционалдық</a><a href="#score">4. Бағалау</a><a href="#answers">Мұғалімге</a></div></nav>
+<main class="wrap">
+<section class="objectives" id="aims">
+ <div class="intro-card"><h2>🎯 Зерттеу міндеті</h2><p>Азия қоғамдарының ерекшелігін түсіндіріп, отаршылдықтың салдарын бағалау және тарихи ұғымдарды нақты жағдаятта пайдалану.</p></div>
+ <div class="objective-card"><h2>Оқу мақсаттары</h2><div class="objectives-list">
+  <div class="objective"><b>7.1.1.3</b><span>Азия мемлекеттерінің әлеуметтік құрылымындағы ерекшеліктерді анықтау.</span></div>
+  <div class="objective"><b>7.2.1.2</b><span>Миссионерліктің міндеттерін анықтау.</span></div>
+  <div class="objective"><b>7.3.2.6</b><span>Отаршылдық экспансияның Шығыстың дәстүрлі қоғамдарына ықпалын сипаттау.</span></div>
+  <div class="objective"><b>7.4.1.4</b><span>Экспорт, импорт, экспансия, отарлау, фактория ұғымдарын қолданып, тауар-ақша қатынастарын түсіндіру.</span></div>
+ </div></div>
+</section>
+
+<section class="section" id="levels">
+ <div class="section-heading"><div><div class="section-label">01 · Білу — қолдану — бағалау</div><h2>Деңгейлік тапсырмалар</h2><p>Алдымен ұғымдарды сәйкестендір, кейін тарихи жағдайды талда.</p></div><span class="badge">А · В · С деңгейлері</span></div>
+ <div class="grid">
+  <article class="card">
+   <div class="card-head"><div class="number">A</div><div><span class="level">Білу және түсіну</span><h3>1-тапсырма. Ұғымдарды сәйкестендір</h3><div class="sub">Әр ұғымға сәйкес анықтаманы таңда. 5 балл.</div></div></div>
+   <div class="terms">
+    <div class="term-row"><label for="m1">1. Экспорт<small>Тауарды елдер арасында өткізу</small></label><select id="m1" aria-label="Экспорт анықтамасы"><option value="">Таңда</option><option value="A">А</option><option value="Ә">Ә</option><option value="Б">Б</option><option value="В">В</option><option value="Г">Г</option></select></div>
+    <div class="term-row"><label for="m2">2. Импорт<small>Тауарды шетелден алу</small></label><select id="m2" aria-label="Импорт анықтамасы"><option value="">Таңда</option><option value="A">А</option><option value="Ә">Ә</option><option value="Б">Б</option><option value="В">В</option><option value="Г">Г</option></select></div>
+    <div class="term-row"><label for="m3">3. Экспансия<small>Ықпалды кеңейту</small></label><select id="m3" aria-label="Экспансия анықтамасы"><option value="">Таңда</option><option value="A">А</option><option value="Ә">Ә</option><option value="Б">Б</option><option value="В">В</option><option value="Г">Г</option></select></div>
+    <div class="term-row"><label for="m4">4. Отарлау<small>Аумақты бағындыру</small></label><select id="m4" aria-label="Отарлау анықтамасы"><option value="">Таңда</option><option value="A">А</option><option value="Ә">Ә</option><option value="Б">Б</option><option value="В">В</option><option value="Г">Г</option></select></div>
+    <div class="term-row"><label for="m5">5. Фактория<small>Шетелдегі сауда орны</small></label><select id="m5" aria-label="Фактория анықтамасы"><option value="">Таңда</option><option value="A">А</option><option value="Ә">Ә</option><option value="Б">Б</option><option value="В">В</option><option value="Г">Г</option></select></div>
+   </div>
+   <div class="scenario"><b>Анықтамалар:</b> А — өзге ел аумағын басып алып, бағындыру; Ә — шетелге тауар шығару; Б — шетелден тауар әкелу; В — өз ықпалын басқа аумақтарға тарату; Г — сауда жүргізетін шетелдік орын.</div>
+   <div class="btn-row"><button class="btn btn-primary" onclick="checkMatching()">Жауапты тексеру</button><button class="btn btn-outline" onclick="resetMatching()">Қайта бастау</button></div><div id="matchFeedback" class="feedback" role="status"></div>
+   <div class="field"><label for="shortA">2-тапсырма. Қысқаша жауап бер</label><ol class="list"><li>Апиын соғыстары қай мемлекеттер арасында болды?</li><li>Еуропалық державалар Қытайды не үшін өз ықпалына алуға тырысты?</li><li>Миссионерлердің негізгі міндеті қандай болды?</li></ol><textarea id="shortA" placeholder="Үш сұраққа қысқаша жауап жаз..."></textarea><small>Мұғалім бағалайды: тарихи дәлдік, толықтық және терминдерді дұрыс қолдану.</small></div>
+   <div class="rubric"><strong>Бағалау критерийі мен дескриптор</strong>Ұғымдарды анықтамаларымен дұрыс сәйкестендіреді; тарихи сұрақтарға мазмұнды жауап береді. Ұсынылатын балл: 5.</div>
+  </article>
+  <article class="card">
+   <div class="card-head"><div class="number">B</div><div><span class="level">Қолдану және талдау</span><h3>3-тапсырма. Үш елді салыстыр</h3><div class="sub">Кестеге қысқа тарихи дәлелдер жаз. 6 балл.</div></div></div>
+   <table><thead><tr><th>Өлшем</th><th>Қытай</th><th>Үндістан</th><th>Жапония</th></tr></thead><tbody>
+    <tr><th>Қоғамдық құрылым</th><td><textarea aria-label="Қытай қоғамдық құрылымы" placeholder="Жауап..."></textarea></td><td><textarea aria-label="Үндістан қоғамдық құрылымы" placeholder="Жауап..."></textarea></td><td><textarea aria-label="Жапония қоғамдық құрылымы" placeholder="Жауап..."></textarea></td></tr>
+    <tr><th>Еуропалық ықпал</th><td><textarea aria-label="Қытайдағы еуропалық ықпал" placeholder="Жауап..."></textarea></td><td><textarea aria-label="Үндістандағы еуропалық ықпал" placeholder="Жауап..."></textarea></td><td><textarea aria-label="Жапониядағы еуропалық ықпал" placeholder="Жауап..."></textarea></td></tr>
+    <tr><th>Өзгерістер мен жауап</th><td><textarea aria-label="Қытайдағы өзгерістер" placeholder="Жауап..."></textarea></td><td><textarea aria-label="Үндістандағы өзгерістер" placeholder="Жауап..."></textarea></td><td><textarea aria-label="Жапониядағы өзгерістер" placeholder="Жауап..."></textarea></td></tr>
+   </tbody></table>
+   <div class="field"><label for="opioid">4-тапсырма. Апиын соғыстарының себеп-салдарын анықта</label><textarea id="opioid" placeholder="2 себеп, 2 салдар және Қытай үшін 1 тарихи маңызын жаз..."></textarea></div>
+   <div class="rubric"><strong>Бағалау критерийі мен дескриптор</strong>Үш мемлекетті тарихи белгілері бойынша салыстырады; себеп-салдар байланысын анықтайды. Ұсынылатын балл: 6.</div>
+  </article>
+  <article class="card" style="grid-column:1/-1">
+   <div class="card-head"><div class="number">C</div><div><span class="level">Бағалау және қорытындылау</span><h3>5-тапсырма. Тарихи пікірді бағала</h3><div class="sub">Пікірмен келісесің бе? Өз ұстанымыңды екі дәлелмен қорға. 3 балл.</div></div></div>
+   <div class="scenario" style="font-size:16px"><b>«Еуропалық державалардың Азияға келуі Шығыс елдерінің дамуына тек жағымды әсер етті».</b></div>
+   <div class="field"><label for="opinion">Менің пікірім және дәлелдерім</label><textarea id="opinion" placeholder="Мен бұл пікірмен ... келісемін/келіспеймін, себебі... Бірінші дәлел... Екінші дәлел... Қорытынды..."></textarea><small>Тексеру өлшемдері: нақты ұстаным — 1 балл; екі орынды тарихи дәлел — 1 балл; қорытынды — 1 балл.</small></div>
+   <div class="rubric"><strong>Бағалау критерийі мен дескриптор</strong>Тарихи деректер негізінде пікір білдіреді, кемінде екі дәлел келтіреді және қорытынды жасайды.</div>
+  </article>
+ </div>
+</section>
+
+<section class="section" id="creative">
+ <div class="section-heading"><div><div class="section-label">02 · Қиял — дәлел — тарихи түсіндіру</div><h2>Шығармашылық тапсырмалар</h2><p>Бір тапсырманы таңда немесе үшеуін де орында.</p></div><span class="badge">Жеке / жұп / топ</span></div>
+ <div class="grid">
+  <article class="card"><div class="card-head"><div class="number">01</div><div><div class="creative-tag">Тарихи журналистика</div><h3>«Тарихи тілші»</h3></div></div>
+   <p class="prompt">Өзіңді XIX ғасырдағы тілші ретінде елестет. Қытайдағы апиын соғыстары туралы газет мақаласын жаз.</p>
+   <ul class="list"><li>Соғыстың себептерін түсіндір.</li><li>Қытай халқының жағдайын сипатта.</li><li>Соғыстың салдарын көрсет.</li></ul>
+   <div class="field"><label for="article">Газет мақаласы (100–120 сөз)</label><textarea id="article" rows="7" placeholder="Газеттің атауын немесе мақаланың тақырыбын ойлап тап та, тарихи мақала жаз..."></textarea><small id="articleCount">Сөз саны: 0 · Ұсынылатын көлем: 100–120 сөз.</small></div>
+   <div class="rubric"><strong>Бағалау критерийі</strong>Тарихи оқиғаны дәл сипаттау, себеп-салдарды байланыстыру, жанр талабын сақтау.</div>
+  </article>
+  <article class="card"><div class="card-head"><div class="number">02</div><div><div class="creative-tag">Визуалды зерттеу</div><h3>«Үш ел — үш тағдыр»</h3></div></div>
+   <p class="prompt">Қытай, Үндістан және Жапония туралы постер немесе инфографика жоспарла.</p>
+   <ul class="list"><li>Әр елдің қоғамдық құрылымы.</li><li>Еуропалық державалармен байланысы.</li><li>Отаршылдық ықпалы мен елдің жауабы.</li><li>Әр мемлекетке бір тарихи дерек және қысқаша қорытынды.</li></ul>
+   <div class="field"><label for="poster">Постер жоспары</label><textarea id="poster" rows="7" placeholder="Қытай: ...&#10;Үндістан: ...&#10;Жапония: ...&#10;Ортақ қорытынды: ..."></textarea></div>
+   <div class="rubric"><strong>Бағалау критерийі</strong>Үш елді салыстыру, тарихи деректердің дұрыстығы, көрнекі құрылым және қорытынды.</div>
+  </article>
+  <article class="card" style="grid-column:1/-1"><div class="card-head"><div class="number">03</div><div><div class="creative-tag">Тарихи шешім</div><h3>«Егер мен сол дәуірде өмір сүрсем...»</h3></div></div>
+   <p class="prompt">Сен XIX ғасырдағы Жапонияның басшысысың. Еуропалық державалардың қысымына жауап ретінде елді дамытуға арналған үш шешім ұсын. Әр шешіміңнің себебін түсіндір.</p>
+   <div class="field"><label for="japan">Менің үш шешімім</label><textarea id="japan" rows="5" placeholder="1. Шешім және себебі...&#10;2. Шешім және себебі...&#10;3. Шешім және себебі..."></textarea></div>
+   <div class="rubric"><strong>Бағалау критерийі</strong>Тарихи жағдайға сай кемінде үш шешім ұсынады және әр шешімді дәлелдейді. Мэйдзи дәуіріндегі жаңғырту тәжірибесімен байланыстыра алады.</div>
+  </article>
+ </div>
+</section>
+
+<section class="section" id="functional">
+ <div class="section-heading"><div><div class="section-label">03 · Өмірлік жағдаятта қолдану</div><h2>Функционалдық сауаттылық</h2><p>Ақпаратты талда, ұғымдарды дұрыс қолдан және негізді шешім қабылда.</p></div><span class="badge">Барлығы 11 балл</span></div>
+ <div class="grid">
+  <article class="card"><div class="card-head"><div class="number">01</div><div><h3>«Сауда келісімін талдау»</h3><div class="sub">4 балл · Себептер мен салдар</div></div></div>
+   <div class="scenario">XIX ғасырда еуропалық саудагерлер Қытай нарығына өз тауарларын өткізуге тырысты. Қытай билігі шетелдік саудаға шектеулер қойды. Ұлыбританияның Қытаймен саудасында апиын маңызды тауарға айналып, бұл шиеленісті күшейтті.</div>
+   <div class="field"><label for="trade1">1. Ұлыбританияның Қытай нарығына қызығушылығының екі себебін ата.</label><textarea id="trade1" placeholder="Екі себеп..."></textarea></div>
+   <div class="field"><label for="trade2">2. Экспорт пен импортты осы жағдаятқа байланысты түсіндір.</label><textarea id="trade2" placeholder="Экспорт — ... Импорт — ..."></textarea></div>
+   <div class="field"><label for="trade3">3. Апиын саудасы Қытай қоғамына қандай қауіп төндірді?</label><textarea id="trade3" placeholder="Қауіптерін жаз..."></textarea></div>
+   <div class="field"><label for="trade4">4. Қытай билігінің шектеу қоюын қалай бағалайсың?</label><textarea id="trade4" placeholder="Бағаңды дәлелде..."></textarea></div>
+   <div class="rubric"><strong>Дескриптор</strong>Сауда себептерін атайды; экспорт пен импортты ажыратады; ықпалын түсіндіреді; шешімге дәлелді баға береді.</div>
+  </article>
+  <article class="card"><div class="card-head"><div class="number">02</div><div><h3>«Тарихи шешім қабылда»</h3><div class="sub">3 балл · Жағдаяттық таңдау</div></div></div>
+   <div class="scenario">Сен XIX ғасырдағы Азия мемлекеттерінің бірінде тұратын кеңесшісің. Еуропалық державалар сауда жүргізуді талап етіп, өз ықпалын күшейтуге тырысуда.</div>
+   <div class="field"><label for="state">1. Қай мемлекетті таңдайсың?</label><select id="state"><option value="">Мемлекетті таңда</option><option>Қытай</option><option>Үндістан</option><option>Жапония</option></select></div>
+   <div class="field"><label for="strategy">2. Қандай шешім ұсынасың?</label><select id="strategy"><option value="">Шешімді таңда</option><option>Шетелдік саудаға толық тыйым салу</option><option>Сауданы бақылаумен ашу</option><option>Шетелдік державалармен тең келісім жасау</option><option>Өнеркәсіп пен қорғанысты дамыту</option></select></div>
+   <div class="field"><label for="reason">3. Шешіміңді тарихи және логикалық дәлелдермен негізде.</label><textarea id="reason" placeholder="Мен ... елін таңдадым, себебі... Бұл шешім ... көмектеседі."></textarea></div>
+   <div class="btn-row"><button class="btn btn-primary" onclick="checkDecision()">Жауабымды талдау</button></div><div id="decisionFeedback" class="feedback" role="status"></div>
+   <div class="rubric"><strong>Дескриптор</strong>Тарихи жағдайға сәйкес таңдау жасайды; шешімін негіздейді; ықтимал нәтижесін түсіндіреді.</div>
+  </article>
+  <article class="card" style="grid-column:1/-1"><div class="card-head"><div class="number">03</div><div><h3>«Ақпаратты сарапта»</h3><div class="sub">4 балл · Дұрыс немесе бұрыс екенін анықта, бұрыс пікірді түзет.</div></div></div>
+   <div class="truth-row"><p><b>1.</b> Отарлау кезінде еуропалық мемлекеттер басқа елдердің саясаты мен экономикасына ықпал етті.</p><select id="t1" aria-label="Бірінші пікір"><option value="">Таңда</option><option value="true">Дұрыс</option><option value="false">Бұрыс</option></select></div>
+   <div class="truth-row"><p><b>2.</b> Миссионерлердің негізгі мақсаты тек сауда жасау болды.</p><select id="t2" aria-label="Екінші пікір"><option value="">Таңда</option><option value="true">Дұрыс</option><option value="false">Бұрыс</option></select><div class="field" style="grid-column:1/-1;margin-top:0"><label for="fix2">Бұрыс пікірді түзет</label><input id="fix2" type="text" placeholder="Миссионерлердің негізгі мақсаты..."></div></div>
+   <div class="truth-row"><p><b>3.</b> Жапония Мэйдзи дәуірінде жаңғырту реформаларын жүргізді.</p><select id="t3" aria-label="Үшінші пікір"><option value="">Таңда</option><option value="true">Дұрыс</option><option value="false">Бұрыс</option></select></div>
+   <div class="truth-row"><p><b>4.</b> Апиын соғыстары Қытайдың шетелдік державаларға тәуелділігінің күшеюіне ықпал етті.</p><select id="t4" aria-label="Төртінші пікір"><option value="">Таңда</option><option value="true">Дұрыс</option><option value="false">Бұрыс</option></select></div>
+   <div class="btn-row"><button class="btn btn-primary" onclick="checkTruth()">Жауапты тексеру</button><button class="btn btn-outline" onclick="resetTruth()">Қайта бастау</button></div><div id="truthFeedback" class="feedback" role="status"></div>
+   <div class="rubric"><strong>Дескриптор</strong>Тарихи ақпараттың дұрыстығын анықтайды; қате пікірді тарихи мазмұнға сай түзетеді.</div>
+  </article>
+ </div>
+</section>
+
+<section class="section" id="score">
+ <div class="section-heading"><div><div class="section-label">04 · Кері байланыс</div><h2>Бағалау және жалпы нәтиже</h2><p>Ұсынылатын жалпы балл — 25. Ашық жауаптарды мұғалім критерий бойынша бағалайды.</p></div></div>
+ <div class="score-panel">
+  <div><div class="score-big"><span id="totalScore">0</span><span style="font-size:22px;color:#8a9aa8"> / 25</span></div><p id="scoreMessage" class="score-unit">Автоматты тексерілетін тапсырмаларды орындап, мұғалім қойған баллдарды енгіз.</p><div class="bar"><span id="scoreBar"></span></div><p class="score-unit" style="margin-top:10px">Автоматты есептеу: ұғымдарды сәйкестендіру (5) + ақпаратты сараптау (4).</p></div>
+  <div><h3>Мұғалім қоятын баллдар</h3><div class="score-fields">
+   <div class="score-field"><label for="bB">В деңгейі · /6</label><input id="bB" type="number" min="0" max="6" value="0"></div>
+   <div class="score-field"><label for="bC">С деңгейі · /3</label><input id="bC" type="number" min="0" max="3" value="0"></div>
+   <div class="score-field"><label for="bF1">Жағдаят 1 · /4</label><input id="bF1" type="number" min="0" max="4" value="0"></div>
+   <div class="score-field"><label for="bF2">Жағдаят 2 · /3</label><input id="bF2" type="number" min="0" max="3" value="0"></div>
+  </div><p class="score-unit">Жалпы есеп: 5 + 6 + 3 + 4 + 3 + 4 = 25 балл. Шығармашылық жұмысты жеке критериймен бағалауға болады.</p></div>
+ </div>
+ <details class="teacher-only" id="answers"><summary>Мұғалімге арналған жауап кілті және бағалау нұсқаулығы</summary>
+  <p><b>1-тапсырма:</b> 1–Ә (экспорт), 2–Б (импорт), 3–В (экспансия), 4–А (отарлау), 5–Г (фактория).</p>
+  <p><b>Апиын соғыстары:</b> Ұлыбритания мен Қытай арасындағы Бірінші апиын соғысы 1839–1842 жылдары, Екінші апиын соғысы 1856–1860 жылдары өтті.</p>
+  <p><b>Миссионерлік:</b> діни сенімді тарату, жергілікті халықты христиан дініне тарту. Тарихи миссиялар білім беру немесе қайырымдылық жұмыстарымен де айналысқан кезеңдер болды, бірақ тапсырмада негізгі діни мақсаты көрсетіледі.</p>
+  <p><b>Салыстыруға арналған тірек жауаптар:</b></p>
+  <ul><li><b>Қытай:</b> императорлық билік, шенеуніктер, шаруалар және саудагерлер; апиын соғыстары мен тең емес шарттар сыртқы ықпалды күшейтті.</li><li><b>Үндістан:</b> касталық жүйе мен әртүрлі әлеуметтік топтар; Британдық Ост-Үнді компаниясының, кейін британдық отарлық биліктің ықпалы күшейді.</li><li><b>Жапония:</b> император, сегунат дәуіріндегі самурайлар және басқа әлеуметтік топтар; Мэйдзи жаңғыртуы орталықтану, әскер мен өнеркәсіпті дамытуға ықпал етті.</li></ul>
+  <p><b>Апиын соғыстарының себептері:</b> сауда теңгерімсіздігі мен британдықтардың Қытай нарығына кіруге ұмтылысы; апиын саудасын Қытай билігінің шектеуі. <b>Салдары:</b> Қытайдың жеңілісі, тең емес шарттар, бірқатар порттардың ашылуы және шетелдік ықпалдың артуы. Негізгі тарихи маңызы — Цин мемлекетінің әлсіреуі мен сыртқы қысымның күшеюі.</p>
+  <p><b>Тарихи пікірді бағалау:</b> біржақты «тек жағымды әсер етті» деген қорытынды негізсіз. Дәлелдер отарлық тәуелділік, мәжбүрлі сауда, экономикалық мүдделердің өзгеруі сияқты теріс әсерлерді де; кейбір аймақтардағы жаңа технологиялар мен білімнің таралуы сияқты өзгерістерді де салыстыруы керек.</p>
+  <p><b>Функционалдық 3-жағдаят:</b> 1 — дұрыс; 2 — бұрыс; 3 — дұрыс; 4 — дұрыс. Екінші пікірдің түзетілуі: миссионерлердің негізгі міндеті — христиан дінін тарату және жергілікті халықты осы дінге тарту.</p>
+  <p><b>Ұсынылатын дескрипторлар:</b> тарихи ұғымды дәл қолданады; салыстыруға кемінде екі нақты белгі келтіреді; себеп пен салдарды шатастырмайды; пікірін дерекпен дәлелдейді; өмірлік шешімін тарихи жағдаймен байланыстырады.</p>
+ </details>
+</section>
+</main>
+<footer><div class="wrap foot"><span><b>HISTORY DETECTIVE</b> · 7-сынып · Дүниежүзі тарихы</span><span>Оқу мақсаттарына негізделген интерактивті материал</span></div></footer>
+<script>
+const answersMatch={m1:"Ә",m2:"Б",m3:"В",m4:"А",m5:"Г"};
+function showFeedback(id,msg,ok){const el=document.getElementById(id);el.textContent=msg;el.className="feedback show "+(ok?"ok":"no")}
+function checkMatching(){let score=0,done=0;for(const [id,answer] of Object.entries(answersMatch)){const el=document.getElementById(id);if(el.value)done++;if(el.value===answer)score++}showFeedback("matchFeedback",done<5?"Әзірше "+done+"/5 жауап таңдалды. Дұрыс жауап: "+score+"/5. Барлық ұғымды таңдап шық.":"Нәтиже: "+score+"/5 балл. "+(score===5?"Жарайсың! Барлық ұғым дұрыс.":"Қате жауаптарды мұғалімнің жауап кілтімен салыстыр."),score===5);updateScore()}
+function resetMatching(){for(const id of Object.keys(answersMatch))document.getElementById(id).value="";const el=document.getElementById("matchFeedback");el.className="feedback";el.textContent="";updateScore()}
+function checkTruth(){const keys={t1:"true",t2:"false",t3:"true",t4:"true"};let score=0,done=0;for(const [id,ans] of Object.entries(keys)){const val=document.getElementById(id).value;if(val)done++;if(val===ans)score++}const correction=document.getElementById("fix2").value.trim();showFeedback("truthFeedback","Нәтиже: "+score+"/4. "+(done<4?"Таңдалған пікір: "+done+"/4. ":"")+(score===4?"Барлығы дұрыс!":"Мұғаліммен қате пікірлерді талқыла.")+(correction.length>8?" Түзету жауабы жазылған.":" Екінші пікірдің түзетуін де жаз."),score===4&&correction.length>8);updateScore()}
+function resetTruth(){["t1","t2","t3","t4"].forEach(id=>document.getElementById(id).value="");document.getElementById("fix2").value="";document.getElementById("truthFeedback").className="feedback";updateScore()}
+function checkDecision(){const state=document.getElementById("state").value,strategy=document.getElementById("strategy").value,reason=document.getElementById("reason").value.trim();let msg="";if(!state||!strategy)msg="Алдымен мемлекет пен шешімді таңда.";else if(reason.length<20)msg="Таңдауың жазылды. Шешімнің себебін және күтілетін нәтижесін толығырақ түсіндір.";else msg=state+" бойынша «"+strategy+"» шешімін таңдадың. Себеп пен ықтимал нәтижені тарихи деректермен байланыстырып, мұғаліммен талқыла.";showFeedback("decisionFeedback",msg,!!state&&!!strategy&&reason.length>=20)}
+function countWords(text){return text.trim()?text.trim().split(/\s+/).length:0}
+document.getElementById("article").addEventListener("input",e=>{const n=countWords(e.target.value);document.getElementById("articleCount").textContent="Сөз саны: "+n+" · "+(n>=100&&n<=120?"Ұсынылған көлем сақталған.":"Ұсынылатын көлем: 100–120 сөз.")})
+function updateScore(){let automatic=0;for(const [id,ans] of Object.entries(answersMatch))if(document.getElementById(id).value===ans)automatic++;const tru={t1:"true",t2:"false",t3:"true",t4:"true"};for(const [id,ans] of Object.entries(tru))if(document.getElementById(id).value===ans)automatic++;let manual=0;for(const [id,max] of [["bB",6],["bC",3],["bF1",4],["bF2",3]]){const el=document.getElementById(id);let val=Number(el.value)||0;val=Math.max(0,Math.min(max,val));manual+=val}const total=automatic+manual;document.getElementById("totalScore").textContent=total;document.getElementById("scoreBar").style.width=(total/25*100)+"%";document.getElementById("scoreMessage").textContent=total>=22?"Өте жақсы нәтиже! Тарихи дәлелдеріңді сақтап, ашық жауаптарды да бағалат.":total>=16?"Жақсы жұмыс. Қате жауаптарды түзетіп, ашық тапсырмаларды толықтыр.":"Тапсырмаларды жалғастыр. Автоматты тексеруді қолданып, мұғаліммен ашық жауаптарды бағала."}
+["bB","bC","bF1","bF2"].forEach(id=>document.getElementById(id).addEventListener("input",updateScore));
+Object.keys(answersMatch).forEach(id=>document.getElementById(id).addEventListener("change",updateScore));
+["t1","t2","t3","t4"].forEach(id=>document.getElementById(id).addEventListener("change",updateScore));
+updateScore();
+</script>
+</body>
+</html>
